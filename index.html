@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ</title>
+    <link rel="stylesheet" href="icons/css/font-awesome.css">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <h1 class="text-center display-2 text-primary py-5">QUIZ</h1>
+        <div class="results py-4 text-center bg-light d-none">
+            <div class="container lead">
+                <p>You are <span class="text-primary display-4 p-3">0%</span>correct</p>
+            </div>
+        </div>
+        <div class="container-fluid p-5 bg-primary text-light">
+            <form action="" class="quiz">
+                <h1 class="fs-3">Get on with the Questions</h1>
+                <div class="my-5">
+                    <p class="font-weight-normal">1. whats abdulbasit's favourite food?</p>
+                    <div class="form-check text-lead">
+                        <input type="radio" name="q1" value="A">
+                        <label class="form-check-label">Fried rice and chicken</label><i class="fa fa-check ml-2"></i>
+                    </div>
+                    <div class="form-check text-lead">
+                        <input type="radio" name="q1" value="B">
+                        <label class="form-check-label">Yam and egg</label><i class="fa fa-times ml-2"></i>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <p class="font-weight-normal">2. How do you give a Ninja directions?</p>
+                    <div class="form-check text-lead">
+                        <input type="radio" name="q2" value="A">
+                        <label class="form-check-label">Show them a map</label></label><i class="fa fa-times ml-2"></i>
+                    </div>
+                    <div class="form-check text-lead">
+                        <input type="radio" name="q2" value="B">
+                        <label class="form-check-label">Dont't worry a ninja will find you</label><i class="fa fa-check ml-2"></i>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <p class="font-weight-normal">3. How do you give a Ninja directions?</p>
+                    <div class="form-check text-lead">
+                        <input type="radio" name="q3" value="A">
+                        <label class="form-check-label">Show them a map</label></label><i class="fa fa-check ml-2"></i>
+                    </div>
+                    <div class="form-check text-lead">
+                        <input type="radio" name="q3" value="B">
+                        <label class="form-check-label">Dont't worry a ninja will find you</label><i class="fa fa-times ml-2"></i>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <p class="font-weight-normal">4. How do you give a Ninja directions?</p>
+                    <div class="form-check text-lead">
+                        <input type="radio" name="q4" value="A">
+                        <label class="form-check-label">Show them a map</label></label><i class="fa fa-check ml-2"></i>
+                    </div>
+                    <div class="form-check text-lead">
+                        <input type="radio" name="q4" value="B">
+                        <label class="form-check-label">Dont't worry a ninja will find you</label><i class="fa fa-times ml-2"></i>
+                    </div>
+                </div>
+                <input type="submit" class="btn bg-light" value="SUBMIT">
+            </form>
+        </div>
+    </div>
+    <script src="js/quiz.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- const form = document.querySelector('form');
+const correctAnswers = ['A', 'B', 'A', 'A'];
+const results = document.querySelector('.results');
+const fa = document.querySelectorAll('.fa');
+fa.forEach(fa => {
+    fa.style.opacity = `0`;
+}); 
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    let score = 0;
+    const userAnswers = [form.q1.value, form.q2.value, form.q3.value, form.q4.value];
+    userAnswers.forEach((answer,index) => {
+        if (answer === correctAnswers[index]){
+            score += 25;
+        }
+    });
+
+    results.classList.remove('d-none');
+    scrollTo(0,0);
+    fa.forEach(fa => {
+        fa.style.opacity = `1`;
+    });
+
+    let output = 0;
+    const timer = setInterval(() => {
+            results.querySelector('span').textContent = `${output}%`;
+            if( output === score) {
+                clearInterval(timer);
+            } else {
+                output++
+            }
+    }, 10);
+}); -->
